@@ -1,0 +1,15 @@
+15:46:42.939 INFO - Launching a standalone Selenium Server
+Setting system property webdriver.chrome.driver to ./bin/chromedriver
+15:46:42.967 INFO - Java: Oracle Corporation 24.95-b01
+15:46:42.967 INFO - OS: Linux 3.19.0-51-generic amd64
+15:46:42.978 INFO - v2.52.0, with Core v2.52.0. Built from revision 4c2593c
+15:46:43.035 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match the current platform LINUX
+15:46:43.036 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+registration capabilities Capabilities [{platform=WINDOWS, browserName=MicrosoftEdge, version=}] does not match the current platform LINUX
+15:46:43.036 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+15:46:43.036 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+15:46:43.037 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+registration capabilities Capabilities [{platform=MAC, browserName=safari, version=}] does not match the current platform LINUX
+15:46:43.090 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+15:46:43.090 INFO - Selenium Server is up and running

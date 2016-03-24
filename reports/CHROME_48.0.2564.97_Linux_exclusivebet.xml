@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="exclusivebet"
+    errors="0" failures="1" hostname="" id="" package="exclusivebet" skipped="0"
+    tests="1" time="29.64" timestamp="Wed, 23 Mar 2016 13:46:43 GMT">
+  
+    <testcase name="ExclusiveBet Test " time="29.64" assertions="3">
+
+    
+
+      <failure message="Timed out while waiting for element &lt;#InputPassword&gt; to be visible for 1500 milliseconds.">    at Object.exports.command (/home/addy/NIghtWatch/lib/nightwatch/commands/password.js:3:10)
+    at Object.F.command (/home/addy/NIghtWatch/lib/nightwatch/lib/core/api.js:274:31)
+    at Object.commandFn (/home/addy/NIghtWatch/lib/nightwatch/lib/core/api.js:287:24)
+    at AsyncTree.runCommand (/home/addy/NIghtWatch/lib/nightwatch/lib/core/queue.js:159:30)
+    at AsyncTree.runChildNode (/home/addy/NIghtWatch/lib/nightwatch/lib/core/queue.js:119:8)
+    at AsyncTree.walkDown (/home/addy/NIghtWatch/lib/nightwatch/lib/core/queue.js:85:10)
+    at AsyncTree.walkUp (/home/addy/NIghtWatch/lib/nightwatch/lib/core/queue.js:102:8)
+    at AsyncTree.walkDown (/home/addy/NIghtWatch/lib/nightwatch/lib/core/queue.js:95:12)
+    at AsyncTree.walkUp (/home/addy/NIghtWatch/lib/nightwatch/lib/core/queue.js:102:8)
+    at AsyncTree.walkDown (/home/addy/NIghtWatch/lib/nightwatch/lib/core/queue.js:95:12)</failure>
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

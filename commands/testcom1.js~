@@ -1,0 +1,5 @@
+module.command = function(){
+
+    this.url('https://new.betbrain.com/')
+
+}

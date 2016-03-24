@@ -1,0 +1,25 @@
+module.exports =  {
+   'ExclusiveBet Test ' : function(browser){
+
+    browser
+        .testcom()
+        .end()
+
+    
+},
+
+   'sds' : function (browser){
+       var glo = browser.globals.myvar;
+          browser
+             .url('https://new.betbrain.com',function(){
+                                    var r = browser.testcom();
+                     console.log("glo2",r);
+              })
+             .end()
+   
+
+
+  
+}
+
+}

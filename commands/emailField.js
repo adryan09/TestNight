@@ -1,0 +1,41 @@
+exports.command = function (){
+    var val = this.globals;
+    this.url('https://www.guerrillamail.com/inbox?mail_id=1')
+
+        .waitForElementVisible('#use-alias',1000)
+        .click('#use-alias')
+        .pause(3000)
+        .getText('#email-widget',function(res){
+            console.log("Res is",res.value);
+            this.globals.globalVar = res.value;
+
+            var glob = this.globals.globalVar;
+
+            console.log("Glo 2",glob);
+
+        })
+        .url('https://new.betbrain.com/signup')
+        .waitForElementPresent('#InputEmail',1000,function(){
+
+            console.log("Val", val.globalVar);
+            this.setValue('#InputEmail',val.globalVar)
+                .pause(2000)
+
+        })
+
+
+
+
+    return this;
+
+
+
+
+
+}
+
+
+
+
+
+

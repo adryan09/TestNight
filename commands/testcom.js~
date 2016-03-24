@@ -1,0 +1,23 @@
+exports.command = function (){
+
+     this.url('https://www.guerrillamail.com/inbox?mail_id=1')
+          .waitForElementVisible('#use-alias',1000)
+          .click('#use-alias')  
+          .pause(3000)
+          .getText('#email-widget',function(res){
+                console.log("Res is",res.value);
+                var glo = this.globals.myvar;
+                  console.log("global is",glo);
+                glo = res.value;
+                  console.log("Glo 2",glo);
+
+       }) 
+        
+
+     return this;
+
+
+
+
+
+}

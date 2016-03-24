@@ -1,0 +1,16 @@
+module.exports =  {
+   'ExclusiveBet Test ' : function(browser){
+    browser
+         .url('https://www.exclusivebet.com/Sports/')
+         .waitForElementVisible('body',1000)
+         .end();
+    
+  
+ 
+
+
+
+}
+  
+ 
+};
