@@ -1,42 +1,27 @@
-var https = require('https');
-module.exports =  {
 
-   'ExclusiveBet Test ' : function(browser){
+module.exports = {
 
-    browser
-        .emailField()
-        .password('adasdas')
-        .end()
-   },
+    'ExclusiveBet Test ': function (browser) {
 
-    after : function (browser){
-        browser.end();
+
+
+            browser
+                .emailField()
+                .pass('adasdas')
+
+
+
+
 
 
     },
-    tearDown : function(callback){
 
 
-        if(this.client.globals.selenium_server == 'saucelabs')
-        {
-            require('/home/addy/NIghtWatch/lib/nightwatch/lib/saucelabs.js').update_saucelabs(this.results.failed, ["my-tag1", "my-tag2"], this.client, https, callback);
-
-        }else
-        {
-            callback();
-        }
+    after : function(browser){
 
 
+        browser.finish()
 
     }
-
-
-
-
-
-
-    
-
-
 
 }

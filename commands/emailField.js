@@ -2,7 +2,7 @@ exports.command = function (){
     var val = this.globals;
     this.url('https://www.guerrillamail.com/inbox?mail_id=1')
 
-        .waitForElementVisible('#use-alias',1000)
+        .waitForElementVisible('#use-alias',10000)
         .click('#use-alias')
         .pause(3000)
         .getText('#email-widget',function(res){
@@ -15,27 +15,16 @@ exports.command = function (){
 
         })
         .url('https://new.betbrain.com/signup')
-        .waitForElementPresent('#InputEmail',1000,function(){
+        .waitForElementPresent('#InputEmail',5000,function(){
 
             console.log("Val", val.globalVar);
             this.setValue('#InputEmail',val.globalVar)
                 .pause(2000)
 
-        })
-
-
-
+        });
 
     return this;
 
-
-
-
-
-}
-
-
-
-
+};
 
 
