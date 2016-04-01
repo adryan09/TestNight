@@ -5,7 +5,7 @@
   "custom_assertions_path" : "",
   "page_objects_path" : "",
   "globals_path" : "./global/globals.js",
- 
+
   "selenium" : {
     "start_process" : true,
     "server_path" : "./bin/selenium-server-standalone-2.52.0.jar",
@@ -17,27 +17,35 @@
       "webdriver.ie.driver" : ""
     }
   },
- 
+
   "test_settings" : {
     "default" : {
       "launch_url" : "http://localhost",
       "selenium_port"  : 4444,
       "selenium_host"  : "localhost",
       "silent": true,
+      "silent" : true,
+      "output" : true,
       "screenshots" : {
         "enabled" : false,
+        "on_failure" : true,
         "path" : ""
       },
       "desiredCapabilities": {
-        "browserName": "chrome",
-        "javascriptEnabled": true,
-        "acceptSslCerts": true
+        "name" : "test-example",
+        "browserName": "chrome"
+      },
+      "globals" : {
+        "myGlobal" : "./global/globals.js"
+      },
+      "selenium" : {
+        "start_process" : true
       }
     },
-      "saucelabs" : {
+    "saucelabs" : {
       "selenium_host" : "ondemand.saucelabs.com",
       "selenium_port" : 80,
-      "server_path" : "./bin/selenium-server-standalone-2.52.0.jar",
+      "server_path" : "",
       "username" : "${SAUCE_USERNAME}",
       "access_key" : "${SAUCE_ACCESS_KEY}",
       "use_ssl" : false,
@@ -59,7 +67,7 @@
         "start_process" : true
       }
     },
- 
+
     "chrome" : {
       "desiredCapabilities": {
         "browserName": "chrome",

@@ -1,32 +1,32 @@
 {
-  "src_folders" : ["tests"],
-  "output_folder" : "reports",
-  "custom_commands_path" : "",
-  "custom_assertions_path" : "",
-  "page_objects_path" : "",
-  "globals_path" : "",
-
-  "selenium" : {
-    "start_process" : false,
-    "server_path" : "",
-    "log_path" : "",
-    "host" : "127.0.0.1",
-    "port" : 4444,
-    "cli_args" : {
-      "webdriver.chrome.driver" : "",
-      "webdriver.ie.driver" : ""
+  "src_folders": [
+    "tests"
+  ],
+  "output_folder": "reports",
+  "custom_commands_path": "",
+  "custom_assertions_path": "",
+  "page_objects_path": "",
+  "globals_path": "",
+  "selenium": {
+    "start_process": false,
+    "server_path": "",
+    "log_path": "",
+    "host": "127.0.0.1",
+    "port": 4444,
+    "cli_args": {
+      "webdriver.chrome.driver": "",
+      "webdriver.ie.driver": ""
     }
   },
-
-  "test_settings" : {
-    "default" : {
-      "launch_url" : "http://localhost",
-      "selenium_port"  : 4444,
-      "selenium_host"  : "localhost",
+  "test_settings": {
+    "default": {
+      "launch_url": "http://localhost",
+      "selenium_port": 4444,
+      "selenium_host": "localhost",
       "silent": true,
-      "screenshots" : {
-        "enabled" : false,
-        "path" : ""
+      "screenshots": {
+        "enabled": false,
+        "path": ""
       },
       "desiredCapabilities": {
         "browserName": "firefox",
@@ -34,15 +34,51 @@
         "acceptSslCerts": true
       }
     },
-
-    "chrome" : {
+    "chrome": {
       "desiredCapabilities": {
         "browserName": "chrome",
         "javascriptEnabled": true,
         "acceptSslCerts": true
       }
     }
-  }
+  },
+  "name": "nightwatch",
+  "description": "UI automated testing framework powered by [Node.js](http://nodejs.org/). It uses the [Selenium WebDriver API](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol).",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "nightwatch": "runner.js"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "chai-nightwatch": "^0.1.1",
+    "clicolor": "^2.0.2",
+    "ejs": "^0.8.8",
+    "lodash.clone": "^3.0.3",
+    "lodash.defaultsdeep": "^4.3.2",
+    "minimatch": "^0.2.14",
+    "mkpath": "^1.0.0",
+    "mocha-nightwatch": "^2.2.7",
+    "optimist": "^0.6.1",
+    "proxy-agent": "^2.0.0",
+    "q": "^1.4.1",
+    "sauce-connect": "^0.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adryan09/TestNight.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adryan09/TestNight/issues"
+  },
+  "homepage": "https://github.com/adryan09/TestNight#readme"
 }
-
-
