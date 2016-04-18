@@ -6,14 +6,7 @@ module.exports = {
             .windowMaximize()
             .url('http://google.com')
             .waitForElementPresent('body', 1000,false)
-            .useXpath()
-            .waitForElementPresent('//input[@id="lst-ib"]',1000,false,function(res){
-                console.log("Res is",);
-
-
-            })
-            .setValue('//input[@id="lst-ib"]', ['nightwatch', browser.Keys.ENTER])
-            .useCss()
+            .setValue('input[type=text]sdsd', ['nightwatch', browser.Keys.ENTER])
             .waitForElementVisible('#main', 1000)
 
 
@@ -22,9 +15,9 @@ module.exports = {
 
     after : function(browser){
 
-
+    
         browser.finish()
- 
+
 
     }
 
@@ -32,4 +25,5 @@ module.exports = {
 
 
 
-}
+
+}       

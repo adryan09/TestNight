@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="google"
+    errors="0" failures="1" hostname="" id="" package="google" skipped="0"
+    tests="1" time="12.70" timestamp="Thu, 07 Apr 2016 13:56:51 GMT">
+  
+    <testcase name="demo test google" time="12.70" assertions="3">
+
+      <failure message="Timed out while waiting for element &lt;//input[@id=&quot;lst-ibxxx&quot;]&gt; to be present for 1000 milliseconds.">    at Object.module.exports.demo test google (/home/addy/NIghtWatch/lib/nightwatch/tests/google.js:10:14)
+    at Module.call (/home/addy/NIghtWatch/lib/nightwatch/lib/runner/module.js:63:34)
+    at /home/addy/NIghtWatch/lib/nightwatch/lib/runner/testcase.js:97:29
+    at _fulfilled (/home/addy/NIghtWatch/lib/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/home/addy/NIghtWatch/lib/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/home/addy/NIghtWatch/lib/nightwatch/node_modules/q/q.js:796:13)
+    at /home/addy/NIghtWatch/lib/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/home/addy/NIghtWatch/lib/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/home/addy/NIghtWatch/lib/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (node.js:376:9)</failure>
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

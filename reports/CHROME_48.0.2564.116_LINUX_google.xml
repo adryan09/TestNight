@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
+<testsuites errors="2"
             failures="0"
             tests="1">
 
   <testsuite name="google"
-    errors="0" failures="0" hostname="" id="" package="google" skipped="0"
-    tests="1" time="3.497" timestamp="Wed, 23 Mar 2016 13:12:04 GMT">
+    errors="2" failures="0" hostname="" id="" package="google" skipped="0"
+    tests="1" time="4.764" timestamp="Fri, 08 Apr 2016 14:18:53 GMT">
   
-    <testcase name="demo test google" time="3.497" assertions="2">
+    <testcase name="demo test google" time="4.764" assertions="2">
 
     
 
     
     </testcase>
+      <system-err>
+          Error while running [Google / demo test google]:
+
+  TypeError: Cannot read property &#39;elements&#39; of undefined
+    at Object.&lt;anonymous&gt; (/home/addy/NIghtWatch/lib/nightwatch/tests/google.js:11:46)
+    at F.WaitForElement.complete (/home/addy/NIghtWatch/lib/nightwatch/lib/api/element-commands/_waitForElement.js:181:11)
+    at F.WaitForElement.pass (/home/addy/NIghtWatch/lib/nightwatch/lib/api/element-commands/_waitForElement.js:189:15)
+    at F.WaitForElementPresent.elementFound (/home/addy/NIghtWatch/lib/nightwatch/lib/api/element-commands/waitForElementPresent.js:46:15)
+    at Object.&lt;anonymous&gt; (/home/addy/NIghtWatch/lib/nightwatch/lib/api/element-commands/_waitForElement.js:218:19)
+    at HttpRequest.&lt;anonymous&gt; (/home/addy/NIghtWatch/lib/nightwatch/lib/index.js:341:20)
+    at emitTwo (events.js:100:13)
+    at HttpRequest.emit (events.js:185:7)
+    at HttpRequest.&lt;anonymous&gt; (/home/addy/NIghtWatch/lib/nightwatch/lib/index.js:369:15)
+    at emitThree (events.js:110:13)
+      </system-err>
   
   
   </testsuite>

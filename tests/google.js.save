@@ -1,0 +1,29 @@
+
+module.exports = {
+
+    'demo test google' : function (browser) {
+        browser
+            .windowMaximize()
+            .url('http://google.com')
+            .waitForElementPresent('bodyf', 1000,false)
+            .setValue('input[type=text]', ['nightwatch', browser.Keys.ENTER])
+            .waitForElementVisible('#main', 1000)
+
+
+    },
+
+
+    after : function(browser){
+
+    
+        browser.finish()
+
+
+    }
+
+
+
+
+
+
+}       

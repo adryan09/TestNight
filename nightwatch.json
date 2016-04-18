@@ -33,7 +33,9 @@
       },
       "desiredCapabilities": {
         "name" : "test-example",
-        "browserName": "chrome"
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
       },
       "globals" : {
         "myGlobal" : "./global/globals.js"
@@ -56,9 +58,11 @@
         "on_failure" : true,
         "path" : ""
       },
-      "desiredCapabilities": {
-        "name" : "test-example",
-        "browserName": "chrome"
+     "desiredCapabilities": {
+        "name" : "Firefox Sizes Testing",
+        "browserName": "firefox",
+        "version": "27",
+        "platform": "Windows "
       },
       "globals" : {
         "myGlobal" : "./global/globals.js"
@@ -68,12 +72,190 @@
       }
     },
 
-    "chrome" : {
+    "mac" : {
+      "selenium_host" : "ondemand.saucelabs.com",
+      "selenium_port" : 80,
+      "server_path" : "",
+      "username" : "${SAUCE_USERNAME}",
+      "access_key" : "${SAUCE_ACCESS_KEY}",
+      "use_ssl" : false,
+      "silent" : true,
+      "output" : true,
+      "screenshots" : {
+        "enabled" : false,
+        "on_failure" : true,
+        "path" : ""
+      },
       "desiredCapabilities": {
-        "browserName": "chrome",
-        "javascriptEnabled": true,
-        "acceptSslCerts": true
+        "name" : "Firefox Sizes Testing",
+        "platform": "OS X 10.11 "
+      },
+      "globals" : {
+        "myGlobal" : "./global/globals.js"
+      },
+      "selenium" : {
+        "start_process" : true
+      }
+    },
+
+    "windows_10" : {
+      "selenium_host" : "ondemand.saucelabs.com",
+      "selenium_port" : 80,
+      "server_path" : "",
+      "username" : "${SAUCE_USERNAME}",
+      "access_key" : "${SAUCE_ACCESS_KEY}",
+      "use_ssl" : false,
+      "silent" : true,
+      "output" : true,
+      "screenshots" : {
+        "enabled" : false,
+        "on_failure" : true,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+
+        "browserName" : "chrome",
+        "platform": "Windows 10",
+        "version":"49.0"
+      },
+      "globals" : {
+        "myGlobal" : "./global/globals.js"
+      },
+      "selenium" : {
+        "start_process" : true
+      }
+    },
+
+
+
+
+    "safari" : {
+      "desiredCapabilities": {
+        "browserName": "safari"
+      }
+    },
+  
+   
+
+       "ios" : {
+      "selenium_host" : "ondemand.saucelabs.com",
+      "selenium_port" : 80,
+      "username" : "${SAUCE_USERNAME}",
+      "access_key" : "${SAUCE_ACCESS_KEY}",
+      "use_ssl" : false,
+      "silent" : true,
+      "output" : true,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      }, 
+      "globals" : {
+        "myGlobal" : "./global/globals.js"
+      },
+ 
+      "desiredCapabilities": {
+        "browserName": "Safari",
+        "appiumVerson":"1.5.1",
+        "deviceName": "iPhone 6",
+        "deviceOrientation":"portrait",
+        "platformVersion":"9.2",
+        "platformName":"iOS"
+        }
+    
+          
+      },
+
+    "nexus" : {
+      "selenium_host": "ondemand.saucelabs.com",
+      "selenium_port": 80,
+      "username": "${SAUCE_USERNAME}",
+      "access_key": "${SAUCE_ACCESS_KEY}",
+      "use_ssl": false,
+      "silent": true,
+      "output": true,
+      "screenshots": {
+        "enabled": false,
+        "path": ""
+      },
+      "globals": {
+        "myGlobal": "./global/globals.js"
+      },
+      "desiredCapabilities": {
+        "browserName": "Browser",
+        "appiumVersion": "1.5.1",
+        "deviceName": "Google Nexus 7 HD Emulator",
+        "deviceOrientation": "portrait",
+        "platformVersion": "4.4",
+        "platformName": "Android"
+      }
+    },
+
+       
+       "ipadAir" : {
+      "selenium_host" : "ondemand.saucelabs.com",
+      "selenium_port" : 80,
+      "username" : "${SAUCE_USERNAME}",
+      "access_key" : "${SAUCE_ACCESS_KEY}",
+      "use_ssl" : false,
+      "silent" : true,
+      "output" : true,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      }, 
+      "globals" : {
+        "myGlobal" : "./global/globals.js"
+      },
+ 
+      "desiredCapabilities": {
+        "browserName": "Safari",
+        "appiumVerson":"1.5.1",
+        "deviceName": "iPad Air",
+        "deviceOrientation":"portrait",
+        "platformVersion":"9.2",
+        "platformName":"iOS"
+        }
+    
+          
+      },
+
+
+      "android" : {
+      "selenium_host" : "ondemand.saucelabs.com",
+      "selenium_port" : 80,
+      "username" : "${SAUCE_USERNAME}",
+      "access_key" : "${SAUCE_ACCESS_KEY}",
+      "use_ssl" : false,
+      "silent" : true,
+      "output" : true,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      }, 
+      "globals" : {
+        "myGlobal" : "./global/globals.js"
+      },
+ 
+      "desiredCapabilities": {
+        "browserName": "Browser",
+        "appiumVersion":"1.5.0",
+        "deviceName": "Android Emulator",
+        "deviceType":"phone",
+        "deviceOrientation":"portrait",
+        "platformVersion":"5.1",
+        "platformName":"Android"
+
+
+             
+
+
+        
+    
+          
       }
     }
+
+
+
   }
 }

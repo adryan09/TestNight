@@ -1,15 +1,56 @@
-15:46:42.939 INFO - Launching a standalone Selenium Server
+15:27:41.016 INFO - Launching a standalone Selenium Server
 Setting system property webdriver.chrome.driver to ./bin/chromedriver
-15:46:42.967 INFO - Java: Oracle Corporation 24.95-b01
-15:46:42.967 INFO - OS: Linux 3.19.0-51-generic amd64
-15:46:42.978 INFO - v2.52.0, with Core v2.52.0. Built from revision 4c2593c
-15:46:43.035 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+15:27:41.052 INFO - Java: Oracle Corporation 24.95-b01
+15:27:41.052 INFO - OS: Linux 3.19.0-56-generic amd64
+15:27:41.064 INFO - v2.52.0, with Core v2.52.0. Built from revision 4c2593c
+15:27:41.131 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
 registration capabilities Capabilities [{platform=WINDOWS, ensureCleanSession=true, browserName=internet explorer, version=}] does not match the current platform LINUX
-15:46:43.036 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+15:27:41.131 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
 registration capabilities Capabilities [{platform=WINDOWS, browserName=MicrosoftEdge, version=}] does not match the current platform LINUX
-15:46:43.036 INFO - Driver class not found: com.opera.core.systems.OperaDriver
-15:46:43.036 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
-15:46:43.037 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+15:27:41.131 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+15:27:41.132 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+15:27:41.132 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
 registration capabilities Capabilities [{platform=MAC, browserName=safari, version=}] does not match the current platform LINUX
-15:46:43.090 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
-15:46:43.090 INFO - Selenium Server is up and running
+15:27:41.199 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+15:27:41.199 INFO - Selenium Server is up and running
+15:27:41.523 INFO - Executing: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Exclusivebet}]])
+15:27:41.533 INFO - Creating a new session for Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Exclusivebet}]
+Starting ChromeDriver (v2.9.248304) on port 4638
+[0.065][WARNING]: PAC support disabled because there is no system implementation
+15:27:42.803 INFO - Done: [new session: Capabilities [{platform=ANY, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, name=Exclusivebet}]]
+15:27:42.866 INFO - Executing: [get: https://www.guerrillamail.com/inbox?mail_id=1])
+15:27:44.918 INFO - Done: [get: https://www.guerrillamail.com/inbox?mail_id=1]
+15:27:44.924 INFO - Executing: [maximise window])
+15:27:45.094 INFO - Done: [maximise window]
+15:27:45.101 INFO - Executing: [find elements: By.cssSelector: #use-alias])
+15:27:45.272 INFO - Done: [find elements: By.cssSelector: #use-alias]
+15:27:45.277 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on LINUX (0727b260f051e0dfc78d0ff0e7794177)] -> css selector: #use-alias]])
+15:27:45.297 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on LINUX (0727b260f051e0dfc78d0ff0e7794177)] -> css selector: #use-alias]]
+15:27:45.313 INFO - Executing: [find element: By.cssSelector: #use-alias])
+15:27:45.336 INFO - Done: [find element: By.cssSelector: #use-alias]
+15:27:45.339 INFO - Executing: [click: 0 [[ChromeDriver: chrome on LINUX (0727b260f051e0dfc78d0ff0e7794177)] -> css selector: #use-alias]])
+15:27:45.370 INFO - Done: [click: 0 [[ChromeDriver: chrome on LINUX (0727b260f051e0dfc78d0ff0e7794177)] -> css selector: #use-alias]]
+15:27:48.377 INFO - Executing: [find element: By.cssSelector: #email-widget])
+15:27:48.392 INFO - Done: [find element: By.cssSelector: #email-widget]
+15:27:48.394 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on LINUX (0727b260f051e0dfc78d0ff0e7794177)] -> css selector: #email-widget]])
+15:27:48.411 INFO - Done: [get text: 1 [[ChromeDriver: chrome on LINUX (0727b260f051e0dfc78d0ff0e7794177)] -> css selector: #email-widget]]
+15:27:48.415 INFO - Executing: [get: https://new.betbrain.com/signup])
+15:27:50.072 INFO - Done: [get: https://new.betbrain.com/signup]
+15:27:50.079 INFO - Executing: [find elements: By.cssSelector: #InputEmail])
+15:27:50.097 INFO - Done: [find elements: By.cssSelector: #InputEmail]
+15:27:50.601 INFO - Executing: [find elements: By.cssSelector: #InputEmail])
+15:27:50.616 INFO - Done: [find elements: By.cssSelector: #InputEmail]
+15:27:51.119 INFO - Executing: [find elements: By.cssSelector: #InputEmail])
+15:27:51.129 INFO - Done: [find elements: By.cssSelector: #InputEmail]
+15:27:51.135 INFO - Executing: [find element: By.cssSelector: #InputEmail])
+15:27:51.152 INFO - Done: [find element: By.cssSelector: #InputEmail]
+15:27:51.156 INFO - Executing: [send keys: 2 [[ChromeDriver: chrome on LINUX (0727b260f051e0dfc78d0ff0e7794177)] -> css selector: #InputEmail], [p, q, n, r, g, k, c, y, @, s, h, a, r, k, l, a, s, e, r, s, ., c, o, m]])
+15:27:51.213 INFO - Done: [send keys: 2 [[ChromeDriver: chrome on LINUX (0727b260f051e0dfc78d0ff0e7794177)] -> css selector: #InputEmail], [p, q, n, r, g, k, c, y, @, s, h, a, r, k, l, a, s, e, r, s, ., c, o, m]]
+15:27:53.219 INFO - Executing: [find elements: By.cssSelector: #InputPassword])
+15:27:53.244 INFO - Done: [find elements: By.cssSelector: #InputPassword]
+15:27:53.250 INFO - Executing: [find element: By.cssSelector: #InputPassword])
+15:27:53.270 INFO - Done: [find element: By.cssSelector: #InputPassword]
+15:27:53.275 INFO - Executing: [send keys: 4 [[ChromeDriver: chrome on LINUX (0727b260f051e0dfc78d0ff0e7794177)] -> css selector: #InputPassword], [a, d, a, s, d, a, s]])
+15:27:53.346 INFO - Done: [send keys: 4 [[ChromeDriver: chrome on LINUX (0727b260f051e0dfc78d0ff0e7794177)] -> css selector: #InputPassword], [a, d, a, s, d, a, s]]
+15:27:54.431 INFO - Executing: [delete session: 42ea7db5-fa88-4701-bc6d-a53ff42be595])
+15:27:54.501 INFO - Done: [delete session: 42ea7db5-fa88-4701-bc6d-a53ff42be595]

@@ -6,13 +6,13 @@ exports.command = function(callback) {
     var jobId = this.sessionId;
     console.log('after', this.currentTest.results.failed, jobId);
 
-    var user = 'adrian-ghita09';
-    var key = '35b0783d-e017-498c-a664-86334228b50f';
+    var user = 'ad-gh09';
+    var key = '4a6b1d38-1bcd-4215-b559-c248eb4d3fc8';
 
        var passed =(this.currentTest.results.failed === 0);
 
 
-    console.log('* updating job status:', jobId, passed);
+   console.log('* updating job status:', jobId, passed);
     var url = 'https://saucelabs.com/rest/v1/' + user + '/jobs/' + jobId;
 
     request.put({

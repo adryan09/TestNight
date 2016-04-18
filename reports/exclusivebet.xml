@@ -5,9 +5,9 @@
 
   <testsuite name="exclusivebet"
     errors="0" failures="1" hostname="" id="" package="exclusivebet" skipped="0"
-    tests="1" time="0.01500" timestamp="Tue, 22 Mar 2016 12:01:00 GMT">
+    tests="1" time="0.01100" timestamp="Thu, 31 Mar 2016 15:13:49 GMT">
   
-    <testcase name="ExclusiveBet Test " time="0.01500" assertions="0">
+    <testcase name="ExclusiveBet Test " time="0.01100" assertions="0">
     </testcase>
   
   

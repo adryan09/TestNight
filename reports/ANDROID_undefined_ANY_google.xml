@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="2"
+            failures="0"
+            tests="1">
+
+  <testsuite name="google"
+    errors="2" failures="0" hostname="" id="" package="google" skipped="0"
+    tests="1" time="66.89" timestamp="Wed, 06 Apr 2016 07:40:17 GMT">
+  
+    <testcase name="demo test google" time="66.89" assertions="2">
+
+    
+
+    
+    </testcase>
+      <system-err>
+         ERROR: Unable to locate element: &quot;input[type=text]&quot; using: css selector
+      </system-err>
+  
+  
+  </testsuite>
+</testsuites>
